@@ -18,7 +18,7 @@ static struct optparse_long long_opts[] =
     { NULL,  0,  OPTPARSE_NONE}
 };
 
-static void ds3231_show_all(void)
+void ds3231_show_all(void)
 {
     DS3231_Time time;
     rt_bool_t a2ie, a1ie;

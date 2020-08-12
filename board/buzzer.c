@@ -84,3 +84,37 @@ int beep_set(uint16_t freq, uint8_t volume)
 
     return 0;
 }
+
+/*******************************************************************************
+* @brief    Sound 1, 嘀~
+* @param    None
+* @retval   None
+*******************************************************************************/
+void beep_sound1(void)
+{
+    beep_set(2500, 50);
+    beep_on();
+    rt_thread_mdelay(500);
+    beep_off();
+}
+
+/*******************************************************************************
+* @brief    Sound 1, 嘀~嘀~嘀~
+* @param    None
+* @retval   None
+*******************************************************************************/
+void beep_sound2(void)
+{
+    beep_set(2500, 50);
+    beep_on();
+    rt_thread_mdelay(150);
+    beep_off();
+    rt_thread_mdelay(100);
+    beep_on();
+    rt_thread_mdelay(150);
+    beep_off();
+    rt_thread_mdelay(100);
+    beep_on();
+    rt_thread_mdelay(150);
+    beep_off();
+}

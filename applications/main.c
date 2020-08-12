@@ -29,6 +29,7 @@
 struct button key0, key1, key2; /* 实例化 3 个按键 */
 static rt_timer_t btn_timer;
 static rt_bool_t beep = RT_FALSE;
+static int alarm_count = 0;
 
 /* Private function prototypes -----------------------------------------------*/
 static rt_uint8_t key0_pin_level(void)
@@ -48,7 +49,10 @@ static void button_timer_handler(void *param)
 
 static void alarm_clock_handler(void *args)
 {
-    rt_pin_write(LED1_PIN, !rt_pin_read(LED1_PIN));
+    if (rt_pin_read(DS3231_SQW_PIN) == PIN_LOW)
+    {
+        rt_kprintf("alarm %d\n", alarm_count++);
+    }
 }
 
 static void key0_single_clicked_handler(void *key);
@@ -96,16 +100,8 @@ int main(void)
 
     while (1)
     {
-        rt_pin_write(LED0_PIN, !rt_pin_read(LED0_PIN));
+        rt_pin_write(LED1_PIN, !rt_pin_read(LED1_PIN));
         rt_thread_mdelay(500);
-        if (beep)
-        {
-            beep = RT_FALSE;
-            beep_set(2500, 50);
-            beep_on();
-            rt_thread_mdelay(500);
-            beep_off();
-        }
     }
 
     return RT_EOK;

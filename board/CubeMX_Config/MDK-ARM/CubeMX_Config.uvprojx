@@ -360,7 +360,7 @@
 							<MiscControls/>
 							<Define>USE_HAL_DRIVER,STM32F103xE</Define>
 							<Undefine/>
-							<IncludePath>../Inc;       C:/Users/Lichangchun/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc;       C:/Users/Lichangchun/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;       C:/Users/Lichangchun/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include;       C:/Users/Lichangchun/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include</IncludePath>
+							<IncludePath>../Inc;          C:/Users/Lichangchun/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc;          C:/Users/Lichangchun/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;          C:/Users/Lichangchun/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include;          C:/Users/Lichangchun/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include</IncludePath>
 						</VariousControls>
 					</Cads>
 					<Aads>
