@@ -390,6 +390,11 @@
               <FileType>1</FileType>
               <FilePath>applications\main.c</FilePath>
             </File>
+            <File>
+              <FileName>sht30_collect.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\sht30_collect.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -549,6 +554,11 @@
               <FileName>drv_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\libraries\HAL_Drivers\drv_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>sht3x.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\board\sht3x.c</FilePath>
             </File>
           </Files>
         </Group>

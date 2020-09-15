@@ -60,6 +60,8 @@ static void key0_long_pressed_handler(void *key);
 static void key1_single_clicked_handler(void *key);
 static void key1_long_pressed_handler(void *key);
 
+extern int sht30_collect(void);
+
 int main(void)
 {
     /* set LED pin mode to output */
@@ -98,10 +100,12 @@ int main(void)
     if (btn_timer != RT_NULL)
         rt_timer_start(btn_timer);
 
+    sht30_collect();
+
     while (1)
     {
         rt_pin_write(LED1_PIN, !rt_pin_read(LED1_PIN));
-        rt_thread_mdelay(500);
+        rt_thread_mdelay(1000);
     }
 
     return RT_EOK;

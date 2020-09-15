@@ -13,6 +13,7 @@ CubeMX_Config/Src/stm32f1xx_hal_msp.c
 i2c_adapter.c
 ds3231.c
 buzzer.c
+sht3x.c
 ''')
 
 path =  [cwd]
