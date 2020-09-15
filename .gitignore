@@ -42,3 +42,5 @@ settings/
 cconfig.h
 err_null
 std_null
+*.uvopt
+*.uvoptx
